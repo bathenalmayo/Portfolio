@@ -1,6 +1,8 @@
 import React from "react";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import jsPDF from "jspdf";
+import cv from "/public/cv.pdf"
 
 function About() {
     const theme = createTheme({
@@ -21,6 +23,11 @@ function About() {
           },
         },
       });
+      function download(){
+        const pdfFile = new jsPDF('p','pt','a4');
+        //pdfFile.addPage();
+        pdfFile.save(cv);
+      }
     return (
         <div className="about">
             <h1>HI,
@@ -35,7 +42,7 @@ function About() {
 
             </ul>
             <ThemeProvider theme={theme}>
-            <Button>GET MY RESUME</Button>
+            <Button onClick={download}>GET MY RESUME</Button>
             </ThemeProvider>
             
         </div>
