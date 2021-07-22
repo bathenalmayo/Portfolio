@@ -2,7 +2,7 @@ import React from "react";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import jsPDF from "jspdf";
-import cv from "/public/cv.pdf"
+import cv from "//public/cv.pdf";
 
 function About() {
     const theme = createTheme({
@@ -23,6 +23,7 @@ function About() {
           },
         },
       });
+
       function download(){
         console.log("clicked!");
         const pdfFile = new jsPDF('p','pt','a4');
@@ -43,8 +44,9 @@ function About() {
 
             </ul>
             <ThemeProvider theme={theme}>
-            <Button onClick={download}>GET MY RESUME</Button>
+            <Button >GET MY RESUME</Button>
             </ThemeProvider>
+            <button onClick={download} style={{color:"white"}}>cv</button>
             
         </div>
     )
