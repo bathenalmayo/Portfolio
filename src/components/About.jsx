@@ -5,6 +5,7 @@ import jsPDF from "jspdf";
 import cv from "//public/cv.pdf";
 
 function About() {
+  
     const theme = createTheme({
         overrides: {
           // Style sheet name ⚛️
@@ -32,17 +33,7 @@ function About() {
       }
     return (
         <div className="about">
-            <h1>HI,
-            My name is Bathen</h1>
-            <p>Im a junior web/fullstack developer..</p>
-            <ul>חלק מהיכולות שלי..
-                <li>יכולות למידה עצמית ומהירה</li>
-                <li>עבודת צוות</li>
-                <li>אחראית, בעלת משמעת עצמית גבוהה</li>
-                <li></li>
-                <li></li>
-
-            </ul>
+           
             <ThemeProvider theme={theme}>
             <Button >GET MY RESUME</Button>
             </ThemeProvider>
