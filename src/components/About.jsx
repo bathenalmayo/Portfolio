@@ -24,6 +24,7 @@ function About() {
         },
       });
       function download(){
+        console.log("clicked!");
         const pdfFile = new jsPDF('p','pt','a4');
         //pdfFile.addPage();
         pdfFile.save(cv);
