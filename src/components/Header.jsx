@@ -1,16 +1,17 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
+import React,{useState} from "react";
 
 function Header() {
-    /*mybe use 3 span with onClick event*/
+    const [isMouseOver, setMouseOver] = useState(false);
+    
     return (
         <header>
             <h1> Bathen's Portfolio</h1>
-            <span>
-                <a href="" alt=""> ABOUT |</a>
-                <a href="" alt=""> PROJECTS |</a>
-                <a href="" alt=""> CONTACT</a>
-            </span>
+            <div className="header-links">
+                <span > ABOUT </span>
+                <span > PROJECTS </span>
+                <span > CONTACT</span>
+            </div>
         </header>
     )
 
