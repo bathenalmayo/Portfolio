@@ -1,44 +1,39 @@
-import React from "react";
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import jsPDF from "jspdf";
-import cv from "//public/cv.pdf";
+import React,{useState, useEffect} from "react";
+import cv from "../cv.pdf";
 
 function About() {
-  
-    const theme = createTheme({
-        overrides: {
-          // Style sheet name ⚛️
-          MuiButton: {
-            // Name of the rule
-            text: {
-              // Some CSS
-              background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-              borderRadius: 3,
-              border: 0,
-              color: 'white',
-              height: 48,
-              padding: '0 30px',
-              boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-            },
-          },
-        },
-      });
 
-      function download(){
-        console.log("clicked!");
-        const pdfFile = new jsPDF('p','pt','a4');
-        //pdfFile.addPage();
-        pdfFile.save(cv);
-      }
+ const [isShowen, setIsShowen] = useState(false);
+ useEffect(() => { setTimeout(() => {
+        setIsShowen(true);
+    }, 6000);
+    
+  }, []);
+
     return (
         <div className="about">
-           
-            <ThemeProvider theme={theme}>
-            <Button >GET MY RESUME</Button>
-            </ThemeProvider>
-            <button onClick={download} style={{color:"white"}}>cv</button>
-            
+           { isShowen ?            
+                        (<div className="aboutContainer">
+                            
+                            <h1>MY NAME IS BATHEN</h1>
+                            <h2>IM A JUNIOR WEB DEVELOPER</h2>
+                    
+                            <div className="avatar"  style={{display:'none'}}>
+                                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGhumdvIGqCMg/profile-displayphoto-shrink_400_400/0/1566207287805?e=1633564800&v=beta&t=YGo9wRk9pANQz1cGt9__yiSR4-0C6XKsF-jZzvSxuuM" alt="profile" />
+                            </div>
+                            <div className="aboutContent">
+                                As an enthusiastic technologist with hands-on software, tools, and programming languages skills,<br/>
+                                I am team worker, with high self-discipline and eager to learn and develop. <br/>
+                                I am well positioned to leverage my abilities and qualifications to thrive as Frond-End Developer.          
+                            </div>
+                            
+                            
+                            
+                            <button className="resumeBtn"> <a href={cv} download>GET MY RESUME</a></button>
+                            </div>)
+                    :
+                         <div className="hello">HELLO</div>
+            }
         </div>
     )
 }

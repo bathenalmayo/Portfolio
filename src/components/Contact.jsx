@@ -9,23 +9,29 @@ function Contact() {
     return (
         <div className="contact">
             <h1>Contact Me</h1>
-            <div>
-            <EmailIcon />
+            <div className="info">
+            <div className="email">
+                <EmailIcon fontSize="large"/>
+            {/* <img src="\logo\gmail_icon.png" alt="gmail" /> */}
+                <a href="mailto:bathenalmayo@gamil.com"> bathenalmayo@gamil.com</a>
+                   
+            </div>
+            <div className="phone" >
+                <PhoneIcon fontSize="large" />
                 <span>
-                  
-                    bathenalmayo@gamil.com
+                    +972523339286
                 </span>
             </div>
-                <span>
-                    <PhoneIcon />
-                    052-3339286
-                </span>
-           
-            <div>   
-                <LinkedInIcon />
-                <GitHubIcon />
+            <div className="social">   
+               
+                <a href="https://www.linkedin.com/in/bathen-almayo-6358b2133/">
+                     <LinkedInIcon fontSize="large" />
+                </a>
+                <a href="https://github.com/bathenalmayo">
+                     <GitHubIcon  fontSize="large"/>
+                </a>
             </div>
-
+            </div>
         </div>
     )
 }
