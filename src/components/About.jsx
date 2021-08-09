@@ -26,7 +26,9 @@ function About() {
                                 I am team worker, with high self-discipline and eager to learn and develop. <br/>
                                 I am well positioned to leverage my abilities and qualifications to thrive as Frond-End Developer.          
                             </div>
-                            
+                            <div className="skills">
+                                HTML | CSS | BOOTSTRAP | JAVASCRIPT | NODEJS | EXPRESS | REACT | MONGODB | SQL 
+                            </div>
                             
                             
                             <button className="resumeBtn"> <a href={cv} download>GET MY RESUME</a></button>

@@ -10,11 +10,17 @@ html {
 }
 body {
   /* padding: 0 16px; */
+  /* background: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvbXB1dGVyJTIwc2NlaW5jZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60")
+    no-repeat cover; */
+  background: rgba(0, 0, 0, 0.7);
   background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvbXB1dGVyJTIwc2NlaW5jZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
   background-repeat: no-repeat;
   background-size: cover;
   animation: backgroundImg;
   animation-duration: 5s;
+}
+.app {
+  background: rgba(0, 0, 0, 0.4);
 }
 header {
   position: fixed;
@@ -45,6 +51,10 @@ header div span button {
   float: right;
   margin-top: 8px;
 }
+.header_links button:hover {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
 footer {
   color: #636e72;
   position: fixed;
@@ -64,7 +74,7 @@ footer {
   height: 100vh;
   /* height: fit-content;
   width: fit-content; */
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding-top: 60px;
 }
 .aboutContainer {
@@ -90,9 +100,19 @@ footer {
   width: 70%;
   display: inline-block;
   margin: 20px 5px;
-  color: #636e72;
+  /* color: #636e72; */
+  color: #c3c3c3;
   padding: 5px 20px;
-  font-size: 17px;
+  font-size: 20px;
+}
+.skills {
+  /* color: #c9c9c9; */
+  color: #636e72;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-left: 50px;
+  /*font-size: 20px;
+  font-weight: 500; */
 }
 
 .avatar {
@@ -129,23 +149,27 @@ footer {
 }
 .projects {
   height: fit-content;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   text-align: center;
 }
 .projects h1 {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 400px;
+  margin-bottom: 15px;
 }
 .project_container {
   background: rgba(44, 44, 44, 0.3);
-  border: 5px solid #f77f00;
+  border: 15px solid #f77f00;
   padding: 20px 20px;
-  width: 400px;
-  margin: 50px 15px;
+  width: 50%;
+  margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.project_container:hover {
+  border: 5px solid #14213d;
 }
 .img_text {
   font-family: "Raleway", sans-serif;
@@ -160,7 +184,7 @@ footer {
 
 .contact {
   height: fit-content;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
