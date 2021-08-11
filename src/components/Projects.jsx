@@ -5,7 +5,7 @@ function Projects() {
 
     return (
         <div className="projects">
-            <h1>My Projects/ Take a look at my projects</h1>
+            <h1>Take a look at my project</h1>
             <div className="project_container">
                 <p>FULLSTACK WEB APPLICATION</p>
                 <a href="https://intense-dusk-47752.herokuapp.com/">
