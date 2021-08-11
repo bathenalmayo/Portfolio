@@ -168,6 +168,9 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+.project_container p {
+  margin-bottom: 1rem;
+}
 .project_container:hover {
   border: 5px solid #14213d;
 }

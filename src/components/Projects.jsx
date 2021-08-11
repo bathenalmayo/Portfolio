@@ -12,7 +12,7 @@ function Projects() {
                     <img src="\project_img.jpg" alt="my-project" />
                 </a>
                 <div className="img_text">
-                   essitatibus tempore dolor, doloribus quod. Odio ratione sapiente vitae mollitia labore, possimus veniam?
+                   
                 </div>
                 <div className="logo_container">
                     <img src="\logo\html_icon.png" alt="logo" />
@@ -22,6 +22,7 @@ function Projects() {
                     <img src="\logo\nodejs_logo_icon.png" alt="logo" />
                     <img src="\logo\heroku_icon.png" alt="logo" />
                     <img src="\logo\mongodb_logo_icon.png" alt="logo" />
+                    <img src="\logo\express_logo_icon.png" alt="logo" />
                 </div>
 
             </div>
