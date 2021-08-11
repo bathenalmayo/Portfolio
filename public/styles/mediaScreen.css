@@ -18,6 +18,9 @@
     margin: 0;
     padding: 0;
   }
+  .header_heading {
+    display: none;
+  }
 
   .header_links {
     margin-top: 15px;
@@ -30,7 +33,8 @@
   }
   .aboutContainer h1,
   .aboutContainer h2,
-  .aboutContent {
+  .aboutContent,
+  .skills {
     margin: 0;
     padding: 0;
   }
