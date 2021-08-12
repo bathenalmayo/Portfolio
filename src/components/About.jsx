@@ -23,7 +23,7 @@ function About() {
                             </div>
                             <div className="aboutContent">
                                { /* As an enthusiastic technologist with hands-on software, tools, and programming languages skills,<br/>
-                                I am team worker, with high self-discipline and eager to learn and develop. <br/>
+                                I am team player, with high self-discipline and eager to learn and develop. <br/> able to effectively self-manage during independent projects
                                 I am well positioned to leverage my abilities and qualifications to thrive as Front-End Developer.           */}
                                 As an enthusiastic and creative autodidact, with hands-on programming skills,<br/>
                                 I am looking for an oppertunity to practice my abilities and qualifications as a Front-End Developer.                           
