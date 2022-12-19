@@ -2,6 +2,7 @@
   "name": "bathen_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bathenalmayo.github.io/Portfolio",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
@@ -15,6 +16,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server/server.js",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
