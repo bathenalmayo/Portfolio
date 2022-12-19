@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import cv from "../cv.pdf";
+import cv from "../BathenCv.pdf";
 
 function About() {
 
