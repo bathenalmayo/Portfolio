@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import cv from "../BathenCv.pdf";
+import cv from "../bathenalmayoCv.pdf";
 
 function About() {
 
@@ -24,9 +24,7 @@ function About() {
                             <div className="aboutContent">
                                 As an enthusiastic technologist with hands-on software, tools, and programming languages skills,<br/>
                                 I am team player, with high self-discipline and eager to learn and develop. <br/> able to effectively self-manage during independent projects
-                                I am well positioned to leverage my abilities and qualifications to thrive as Front-End Developer.           
-                                {/* As an enthusiastic and creative autodidact, with hands-on programming skills,<br/>
-                                I am looking for an oppertunity to practice my abilities and qualifications as a Front-End Developer. */}
+                                I am well positioned to leverage my abilities and qualifications to thrive as Fullstack Developer.       
                             </div>
                             <div className="skills">
                             HTML | CSS | JAVASCRIPT | NODEJS | EXPRESS | REACT | TYPESCRIPT | NEXTJS | RAVENDB | MONGODB | SQL  
